@@ -11,6 +11,9 @@ end;
 
 function ModMap:load()
 	ModMap:superClass().load(self);
+	
+	--@	if exist modMap Lua then need you only this Part in the load function!!!
+	
 	if (not self.missionInfo.isValid) and (not self.missionDynamicInfo.isMultiplayer) then
 		local modDesc = loadXMLFile("modDesc", self.baseDirectory .. "modDesc.xml");
 		local key = "modDesc.maps.map#defaultSingleplayerItemsXMLFilename"
@@ -19,5 +22,9 @@ function ModMap:load()
 			return;
 		end;
 		self.missionInfo.itemsXMLLoad  = Utils.getFilename(getXMLString(modDesc, key), self.baseDirectory);
+		delete(modDesc);
 	end;
+	
+	--@ Part end!
+	
 end;

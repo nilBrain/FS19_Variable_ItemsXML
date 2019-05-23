@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="43">
+    <author>AutorName</author>
+    <version>1.0.0</version>
+    <title>
+        <en>Mod Name</en>
+        <de>Mod Name</de>
+    </title>
+    <description>
+        <en>Mod Description</en>
+        <de>Mod Beschreibung</de>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	
+	
+
+	
+
+    <maps>
+		<map id="SampleModMap" className="ModMap" filename="yourPath/ModMap.lua" configFilename="maps/mapDE.xml" defaultVehiclesXMLFilename="defaultVehicles.xml" defaultItemsXMLFilename="defaultItemsMULTIPLAYER.xml" defaultSingleplayerItemsXMLFilename="defaultItemsSINGLEPLAYER.xml">
+			<title>
+				<en>Map Name</en>
+				<de>Karten Name</de>
+			</title>
+			<description>
+				<en>Map Description</en>
+				<de>Karten Beschreibung</de>
+			</description>
+            <iconFilename>map_preview.png</iconFilename>
+        </map>
+    </maps>
+</modDesc>
